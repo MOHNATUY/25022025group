@@ -1,0 +1,20 @@
+[project]
+name = "25022025group"
+version = "0.1.0"
+description = "my project"
+authors = [
+    {name = "Arthur Danilin",email = "mohnatuy0@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flake8 (>=7.1.2,<8.0.0)",
+    "black (>=25.1.0,<26.0.0)",
+    "isort (>=6.0.1,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
