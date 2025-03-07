@@ -1,3 +1,3 @@
-def add_two_numbers():
-    f = "jtrjnbtrjbnrbn kteo nt nbote bebnerkjgioergioetionterirgrgnrntpnm my t o tr onro nhtor nhorn hrn ohrnt ym pn "
-    return f
+def add_two_numbers(number1: float | str, number2: float | str) -> float:
+    result = float(number1) + float(number2)
+    return result
