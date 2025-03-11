@@ -1,5 +1,7 @@
-from utils import add_two_numbers
 import pytest
+
+from utils.utils import add_two_numbers
+
 
 class TestAddTwoNumbers:
     def test_add_two_numbers_success(self):

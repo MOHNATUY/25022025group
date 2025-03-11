@@ -1,7 +1,7 @@
 PHONY: test
 test:
 	@echo 'tests started...'
-	@pytest . -v
+	@set PYTHONPATH=. && python -m pytest -v -s
 
 
 PHONY:  check
