@@ -1,39 +1,24 @@
 import pytest
 
-from models import Bank, BankAccount, Person
-
-
-@pytest.fixture(scope="session")
-def person() -> Person:
-    oleg = Person("Oleg")
-    return oleg
-
+from models import Book, Library
 
 @pytest.fixture(scope="session")
-def another_person() -> Person:
-    oleg = Person("Oleg")
-    return oleg
-
-
-@pytest.fixture(scope="session")
-def bank() -> Bank:
-    b = Bank("Mono")
-    return b
-
+def first_book() -> Book:
+    first_book = Book("Harry Potter", "J.K. Rowling")
+    return first_book
 
 @pytest.fixture(scope="session")
-def bank2() -> Bank:
-    b = Bank("Privat")
-    return b
-
-
-@pytest.fixture(scope="session")
-def bank_account(bank, person) -> BankAccount:
-    account = bank.open_account(person)
-    return account
-
+def another_book() -> Book:
+    another_book = Book("The Great Gatsby", "F.Scott Fitzgerald")
+    return another_book
 
 @pytest.fixture(scope="session")
-def bank_account2(bank, person) -> BankAccount:
-    account = bank.open_account(person)
-    return account
+def library() -> Library:
+    library = Library("British")
+    return library
+
+@pytest.fixture(scope="session")
+def another_library() -> Library:
+    another_library = Library("Washington")
+    return another_library
+
