@@ -1,4 +1,4 @@
-from conftest import library, another_book, another_library
+from conftest import another_book, another_library, library
 
 
 class TestLibrary:
@@ -16,6 +16,7 @@ class TestLibrary:
         library.add_book(another_book)
         assert first_book in library.books
         assert another_book in library.books
+
     def test_remove_book(self, library, first_book, another_book):
         library.remove_book(first_book)
         library.remove_book(another_book)

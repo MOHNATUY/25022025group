@@ -22,4 +22,3 @@ class Library:
     def remove_book(self, inn):
         for book in self.books:
             self.books.remove(book)
-
