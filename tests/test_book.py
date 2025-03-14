@@ -1,6 +1,3 @@
-from conftest import first_book
-
-
 class TestBook:
     def test_new_book(self, first_book):
         assert first_book.inn

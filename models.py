@@ -8,7 +8,7 @@ class Book:
         self.inn: uuid.UUID = uuid.uuid4()
 
     def __str__(self):
-        return f'<Book: {self.name}; Author: {self.author}; Inn: {self.inn}>'
+        return f"<Book: {self.name}; Author: {self.author}; Inn: {self.inn}>"
 
 
 class Library:

@@ -1,6 +1,3 @@
-from conftest import another_book, another_library, library
-
-
 class TestLibrary:
     def test_new_library(self, library):
         assert library.name
