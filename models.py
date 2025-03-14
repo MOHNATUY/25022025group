@@ -8,7 +8,7 @@ class Book:
         self.inn: uuid.UUID = uuid.uuid4()
 
     def __str__(self):
-        return f"<Book: {self.name}; Author: {self.author}; Inn: {self.inn}>"
+        return f'<Book: {self.name}; Author: {self.author}; Inn: {self.inn}>'
 
 
 class Library:
@@ -21,4 +21,6 @@ class Library:
 
     def remove_book(self, inn):
         for book in self.books:
-            self.books.remove(book)
+            if inn == book.inn:
+                self.books.remove(book)
+                break

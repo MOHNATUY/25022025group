@@ -18,7 +18,7 @@ class TestLibrary:
         assert another_book in library.books
 
     def test_remove_book(self, library, first_book, another_book):
-        library.remove_book(first_book)
-        library.remove_book(another_book)
+        library.remove_book(first_book.inn)
+        library.remove_book(another_book.inn)
         assert first_book not in library.books
         assert another_book not in library.books
