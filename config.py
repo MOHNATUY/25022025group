@@ -4,9 +4,9 @@ import ssl
 
 RMQ_HOST = 'kebnekaise-01.lmq.cloudamqp.com'
 RMQ_PORT = 5671
-RMQ_PASSWORD = 'h8cz5QMD1g2EXLnUUWJ3P5V-vUNrfy6_'
-RMQ_USER = 'rpldixzh'
-RMQ_VIRTUAL_HOST = 'rpldixzh'
+RMQ_PASSWORD = 'ao8K8P2BQlhrfn3MogB22OKriEbZ-wjS'
+RMQ_USER = 'htzcthsx'
+RMQ_VIRTUAL_HOST = 'htzcthsx'
 
 ssl_context = ssl.create_default_context()
 

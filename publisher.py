@@ -18,6 +18,7 @@ def produce_message(channel: pika.adapters.blocking_connection.BlockingChannel):
         )
 
 
+
 def main():
     with get_connection() as connection:
         with connection.channel() as channel:
